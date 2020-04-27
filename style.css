@@ -10,24 +10,29 @@
 /* Menu de navegação e logo */
 
 nav #logo a{
+    position: relative;
     float: left;
     margin-left: 50px;
     font-size: 30px;
     margin-top: 10px;
     text-decoration: none;
+    background: transparent;
     color: #323643;
 }
+
 
 nav ul{
     float: right;
     margin-right: 50px;
     margin-top: 20px;
+
+    
 }
 
 nav ul li{
     display: inline;
     margin-left: 15px;
-    color: #F7F7F7;
+    color: #F7F7F7;   
 }
 
 nav ul li a{
@@ -44,3 +49,75 @@ nav ul li a{
     display: grid;
     grid-template-columns: auto auto;
 }
+
+.wrapper #tep1{
+    background-color: #f7f7f7;
+    height: 110vh;
+    margin-top: -60px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 45ch;
+}
+
+.wrapper #tep1 h1{
+    background-color: #f7f7f7;
+    margin-top: 40vh;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.wrapper #tep1 p{
+    background-color: #f7f7f7;
+    color: #93deff;
+    margin-left: 50px;
+}
+.wrapper #tep1 h4{
+    background-color: #f7f7f7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 10px;
+    margin-right: 130px ;
+    margin-left: 50px;
+}
+
+ #imgIn{
+    position: absolute;
+    width: 500px;
+    height: 80vh;
+    background: #93deff;
+    right: 50px;
+    top: 20%;
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.45);
+}
+
+/*inicio da área Sobre da pagina inicial */
+
+/*camada superior do quadro Sobre com sombreamento */
+.wrapper #frontSobre{
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 400px;
+    height: 400px;
+    background-color: #f7f7f7;
+}
+
+.wrapper #frontSobre h1{
+    position: relative;
+    color: #323643;
+    background-color: #F7F7F7;
+    font-size: 45px;
+    padding: 30px;
+
+
+}
+/*camada inferior do quadro Sobre com sombreamento */
+.wrapper #backSobre{
+    margin-top: -380px;
+    margin-left: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: hsla(0, 0%, 97%, 0.479);
+    
+
+}
+
