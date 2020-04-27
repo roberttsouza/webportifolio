@@ -1,39 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Meu portifolio</title>
+    
+        <script src='https://code.jquery.com/jquery-3.2.1.js'></script>	
+
+
+    <title>BEM VINDO</title>
+
 </head>
 <body>
 
-<!--Menu de navegação e logo-->
-    <nav>
-        <div id="nav">
-            <div id="logo"><a href="#">LOGO</a></div>
-            <ul>
-                
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Qualificações</a></li>
-                <li><a href="#">Experiências</a></li>
-                
-            </ul>
-    
-        </div>
-    
-<!--Grids da área inicio-->
+<nav>
+    <div id="nav">
+        <div id="logo"><a href="#">LOGO</a></div>
+        <ul>
+            
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">DEPARTAMETOS  <i class="fas fa-angle-right"></i></a>
+                <ul>
+                    <li><a href="cipm.html">CIPM</a></li>
+                    <li><a href="#">CODONT</a></li>
+                    <li><a href="#">CPAMB</a></li>
+                    <li><a href="#">DAS</a></li>
+                    <li><a href="#">DCI</a></li>
+                </ul>
+            </li>
+            <li><a href="#geral">GERAL</a></li>
+            <li><a href="#">MANUAIS</a></li>
+            
+        </ul>
 
-<section>
-    <div class="wrapper">
-   <div>One</div>
-   <div>Two</div>
-   <div>Three</div>
-   <div>Four</div>
-   <div>Five</div>
     </div>
-</section>
+</nav>
+    <!--dropmenu para mobile -->
+    <div id="logo1"><a href="#">LOGO</a></div>
 
+<div class="bropmenu">
+    <div id="mainbox" onclick="openFunction()">&#9776;</div>
+    <div id="menu" class="sidemenu">
+        <a href="#">CIPM</a>
+        <a href="#">CODONT</a>
+        <a href="#">CPAMB</a>
+        <a href="#">DAS</a>
+        <a href="#">DCI</a>
+        <a href="#" class="closebtn" onclick="closefuction()">&times;</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+   
+
+    <div class="container">
+       
+        <div class="linhaB1">
+            <div class="containerBanner">
+                <h1>SEJA BEM VINDO</h1>
+                <h3>Aqui você encontra o'que procura. seja documentos, software, tutoriais e muito mais!</h3>
+                <button id="btMais">Mais informações</button>
+            </div>
+        </div>
+</div>
+       
+
+        <div class="linhaB2">
+               
+            <div class="containerCards">
+
+                
+                    <div class="card">
+                        
+                        <h2>IBM notes</h2>
+                        <a href="#">ClientBasic9.0.1.zipu</a><br>
+                        <a href="#">notes901FP4_win.exe</a><br>
+                        <a href="#">IBM_NOTES_CLIENT_9.0.1.exe</a><br><br>
+                        
+                            <a href="#" id="btnDW">Baixar</a>
+                        
+                    </div>
+                    <div class="card">
+                            <h2>Windows</h2>
+                            <a href="#"> Windows 7</a><br>
+                            <a href="#">Windows_8</a><br>
+                            <a href="#">Windows_10</a><br><br>
+                            
+                            
+                                <a href="#" id="btnDW">Baixar</a>
+                    </div>
+                    <div class="card">
+                            <h2>Office</h2>
+                            <a href="#">Office_Pro_Plus_2007.EXE</a><br>
+                            <a href="#">MsOfficePro2010_64bits.rar</a><br>
+                            <a href="#">Office_Standard_2007.EXE</a><br><br>
+                            
+                            
+                                <a href="#" id="btnDW">Baixar</a>
+                    </div>
+                    <div class="card">
+                            <h2>Citrix</h2>
+                            <a href="#">CitrixReceiverWeb.exe</a><br>
+                            <a href="#">Novos_certificados</a><br>
+                            <a href="#">ReceiverCleanupUtility.exe</a><br><br>
+                            
+                            
+                                <a href="#" id="btnDW">Baixar</a>
+                    </div>
+              
+            </div>
+        </div>
+
+        <section class="grid-containerGeral">
+            
+            <div class="infor-Geral" id="geral">
+                
+                <h2>Informações Gerais</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Neque consectetur illo cum quasi laudantium quia accusantium nemo saepe! Minima, omnis?
+                </p><br><br>
+
+                <a href="#">Saiba Mais</a>
+            </div>
+
+            <div class="img-Geral">
+                <img src="img/baixar.png" alt="">
+            </div>
+
+        </section>
+
+
+    
+     <!--
+        <i class="fas fa-download fa-2x"></i> 
+        <i class="far fa-user"></i> 
+        <i class="fas fa-user"></i> 
+        <i class="fab fa-github-square"></i> 
+     -->
+     <script>
+     var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsById("nav").style.top = "0";
+  } else {
+    document.getElementsById("nav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+     </script>
+    
+    <script src="app.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
 </body>
 </html>
