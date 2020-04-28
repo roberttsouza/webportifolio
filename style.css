@@ -96,7 +96,7 @@ nav ul li a{
 .wrapper #frontSobre{
     margin-top: 100px;
     margin-left: 60px;
-    width: 400px;
+    width: 500px;
     height: 400px;
     background-color: #f7f7f7;
 }
@@ -105,19 +105,42 @@ nav ul li a{
     position: relative;
     color: #323643;
     background-color: #F7F7F7;
-    font-size: 45px;
-    padding: 30px;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 70px;
+}
 
-
+.wrapper #frontSobre #barraEspacamento{
+    position: relative;
+    top: 40px;
+    margin-left: 30px;
+    width: 130px;
+    height: 8px;
+    background: #323643;
+    z-index: 4;
 }
 /*camada inferior do quadro Sobre com sombreamento */
 .wrapper #backSobre{
     margin-top: -380px;
     margin-left: 40px;
-    width: 400px;
+    width: 500px;
     height: 400px;
     background-color: hsla(0, 0%, 97%, 0.479);
-    
-
 }
+
+.wrapper #descricaoSobre{
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 60px;
+    color: #F7F7F7;
+}
+
+.wrapper #descricaoSobre h1{
+    font-size: 50px;  
+}
+
+.wrapper #descricaoSobre h4{
+   margin-top: 20px; 
+}
+
 
