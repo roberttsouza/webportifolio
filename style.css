@@ -146,7 +146,7 @@ nav ul li a{
 .wrapper #contQuali{
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 50vh;
+    height: 80vh;
     margin-top: 10vh;
     background-color: #F7F7F7;
 }
@@ -166,4 +166,72 @@ margin-top: -50px;
     background-color: #93deff;
     text-align: center;
 }
+
+
+
+
+.wrapper .accordion{
+    display: inline-flex;
+    margin: 70px;
+    background-color: transparent;
+}
+.wrapper .accordion #accCon{
+    background-color: transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.wrapper .accordion #accCon .accordionCon{
+background-color: #f7f7f7;
+color: #323643;
+cursor: pointer;
+padding: 10px;
+width: 100%;
+text-align: left;
+outline: none;
+font-size: 15px;
+border-top: .5px solid;
+border-left: none;
+border-right: none;
+border-bottom: .5px solid;
+transition: 0.6s;
+
+}
+.wrapper .accordion #accCon .accordionCon:focus{
+    border-bottom: none;
+}
+
+.active, .wrapper .accordion #accCon .accordionCon:hover {
+    background-color: #ccc;
+  }
+
+.wrapper .accordion #accCon .accordionCon:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    color: #93deff;
+}
+  .active:after {
+    content: "\2212";
+}
+.wrapper .accordion #accCon .panel {
+    padding: 0 18px;
+    margin-top: -1px;
+    background-color: #F7F7F7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.wrapper .accordion #accCon .panel p{
+    background-color: #F7F7F7;
+}
+.wrapper .accordion #accCon .cardT{  
+    color: #93deff;
+    font-size: 30px;
+    padding: 30px 20px 12px 20px;
+}
+
 
