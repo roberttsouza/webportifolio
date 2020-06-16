@@ -9,16 +9,18 @@
 
 /* Menu de navegação e logo */
 
-nav #logo a{
+nav #logo img{
     position: relative;
     float: left;
+    width: 150px;
     margin-left: 50px;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     text-decoration: none;
     background: transparent;
     color: #323643;
 }
+
 
 
 nav ul{
@@ -270,4 +272,20 @@ transition: 0.6s;
 .wrapper .linksPort a{
     color: #93deff;
     font-size: 15px;
+    text-decoration: none;
+}
+.wrapper .linksPort i{
+    margin-left: 5px;
+}
+
+
+.anime{
+    opacity: 0;
+    transform: translate3d(-100px, 0,0);
+    transition: .3s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
 }

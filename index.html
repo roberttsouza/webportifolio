@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Meu portifolio</title>
 </head>
 <body>
@@ -11,13 +12,13 @@
 <!--Menu de navegação e logo-->
     <nav>
         <div id="nav">
-            <div id="logo"><a href="#">LOGO</a></div>
+            <div id="logo"><a href="#"><img src="img/logo.png " alt=""></a></div>
             <ul>
                 
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Qualificações</a></li>
-                <li><a href="#">Experiências</a></li>
+                <li><a href="#frontSobre">Sobre</a></li>
+                <li><a href="#contQuali">Qualificações</a></li>
+                <li><a href="#proj">Experiências</a></li>
                 
             </ul>
     
@@ -26,7 +27,7 @@
     
 <!--Grids da área inicio-->
 
-<section>
+
     <div id="imgIn"></div>
     <div class="wrapper">
         <div id="tep1">
@@ -44,7 +45,8 @@
             </div>
             <div id="backSobre"></div>
         </div>
-        <div>
+
+        
             <div id="descricaoSobre">
                 <h1>Sobre Robertt Souza</h1>
                 <h4>Lorem ipsum dolor sit amet, consectetur
@@ -57,9 +59,8 @@
                 Donec aliquet fermentum purus. 
                 Ut venenatis erat a augue euismod, 
                 in fermentum tellus eleifen dempus metus.</h4>
-            </div>
-            
-        </div>
+            </div>  
+        
         <div id="contQuali">
             <div id="tikQuali">
                 <h1>Qualificações</h1>
@@ -97,7 +98,7 @@
                 
                 <div id="accCon">
                     <div class="cardT">Certificações</div>
-                    <button class="accordionCon">Metodologia agil</button>
+                    <button class="accordionCon">Metodologia agil </button>
                     <div class="panel">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, modi.
                         </p>
@@ -116,7 +117,7 @@
             </div>
         </div>
         
-        <div class="arProj">
+        <div class="arProj" id="proj">
             <div class="projetos"><h1>Projetos</h1></div>
             
         </div>
@@ -125,8 +126,8 @@
             <h1>Veja aqui com mais detalhes os projetos</h1>
 
             <div id="links">
-                <a href="https://github.com/roberttsouza">GitHub</a><br>
-                <a href="https://codepen.io/roberttsouzzaa">CodePen</a>
+                <a href="https://github.com/roberttsouza" target="-blode">GitHub <i class="fas fa-external-link-alt"></i></a><br>
+                <a href="https://codepen.io/roberttsouzzaa" target="-blode">CodePen <i class="fas fa-external-link-alt"></i></a>
             </div>
 
         </div>
@@ -135,9 +136,9 @@
 
 
     </div>
-</section>
 
 
+<script src="jquery-3.4.1.min.js"></script>
 <script src="javascript.js"></script>
 
 </body>
