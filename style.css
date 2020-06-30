@@ -289,3 +289,36 @@ transition: 0.6s;
     opacity: 1;
     transform: translate3d(0,0,0);
 }
+
+
+/* inicio dos telas responsivas*/
+
+
+@media (max-width: 1048px){
+    .wrapper #frontSobre{
+        width: 400px;
+        height: 300px;
+    }
+    .wrapper #backSobre{
+        width: 400px;
+        height: 300px;
+        margin-top: -260px;
+    }
+    .wrapper #frontSobre h1{
+        font-size: 40px;
+    }
+    .wrapper #descricaoSobre h1{
+        font-size: 30px;
+    }
+    .wrapper #descricaoSobre h4{
+        font-size: 15px;
+    }
+    .wrapper .accordion #accCon{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .wrapper .accordion{
+        margin: 20px;
+    }
+}
