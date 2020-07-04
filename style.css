@@ -255,29 +255,6 @@ transition: 0.6s;
     margin-left: -32%;
 }
 
-.wrapper .linksPort{
-    margin-top: 50px;
-    margin-left: -50%;
-}
-
-.wrapper .linksPort h1{
-    color: #F7F7F7;
-    font-size: 20px;
-}
-
-.wrapper .linksPort #links{
-    margin-top: 10px;
-}
-
-.wrapper .linksPort a{
-    color: #93deff;
-    font-size: 15px;
-    text-decoration: none;
-}
-.wrapper .linksPort i{
-    margin-left: 5px;
-}
-
 
 .anime{
     opacity: 0;
@@ -290,6 +267,81 @@ transition: 0.6s;
     transform: translate3d(0,0,0);
 }
 
+/*formatação de slide para demostração de projetos*/
+
+.slideshow{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #F7F7F7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: #93deff;
+}
+.text{
+    color: #F7F7F7;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #F7F7F7;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #F7F7F7;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #93deff;
+}
+.fade{
+    -webkit-animation-name:fade;
+    -webkit-animation-direction: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
 
 /* inicio dos telas responsivas*/
 
@@ -320,5 +372,12 @@ transition: 0.6s;
     
     .wrapper .accordion{
         margin: 20px;
+    }    
+    .projetos{
+        margin-left: -3px;
     }
+}
+
+@media (max-width: 890px){
+
 }

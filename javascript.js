@@ -49,3 +49,34 @@ $('html, body').animate({
 }, 500);
 
 });
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide(n){
+  showSlides(slideIndex += n);
+}
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slide =  document.getElementsByClassName("mySlide");
+  var dot = document.getElementsByName("dot");
+
+  if(n > slide.length)
+  {slideIndex = 1}
+  if(n < 1)
+  {slideIndex = slide.length}
+  for (i = 0; i < slide.length; i++){
+    slide[i].style.display = "none"
+  }
+  for (i = 0; i < dots.length; i++){
+    dors[i].className = dors[i].className.replace
+    ("ative", "");
+  }
+  slides[slideIndex-1].style.display= "block";
+  dots[slideIndex-1].className += "active";
+}
